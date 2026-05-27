@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :todos do
     member do
       patch :toggle_done
+      patch :toggle_high_priority
     end
   end
   get '/hello', to: 'todos#hello'
