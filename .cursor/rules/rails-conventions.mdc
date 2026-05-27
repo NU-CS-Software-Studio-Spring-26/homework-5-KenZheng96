@@ -1,0 +1,13 @@
+﻿---
+description: Rails 8 conventions for the sample todo app
+alwaysApply: true
+---
+
+- Prefer Turbo Streams over custom JavaScript for partial page updates
+- Keep all migrations reversible (use reversible block or up/down methods)
+- Always use strong parameters in controllers
+- Use bin/rails generate rather than hand-writing boilerplate
+- Keep schema scoped to the todo app; do not import models or migrations from other projects
+- Partials go in app/views/shared/ for shared content or app/views/<resource>/ for resource-specific
+- Controllers respond with HTML by default; only add format.turbo_stream when a Turbo Stream response is needed
+- Follow RESTful routing conventions; avoid custom routes unless necessary
